@@ -1,0 +1,17 @@
+int speedControl = 9;
+int inp1=8;
+int inp2=7;
+void setup() {
+  // put your setup code here, to run once:
+  pinMode (speedControl,OUTPUT);
+  pinMode(inp1,OUTPUT);
+  pinMode(inp2,OUTPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  digitalWrite(inp1,HIGH);
+  digitalWrite(inp2,LOW);
+  analogWrite(speedControl,127);
+
+}
